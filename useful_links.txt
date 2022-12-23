@@ -1,0 +1,10 @@
+Put links here.
+
+# Edo
+
+# Fede
+
+# Toti
+- https://www.nltk.org/howto/dependency.html
+
+# Zano 
