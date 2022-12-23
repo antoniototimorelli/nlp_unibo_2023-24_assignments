@@ -6,7 +6,8 @@ Put links here.
 
 # Toti
 - https://www.nltk.org/howto/dependency.html
-
+- https://www.nltk.org/howto/corpus.html#tagged-corpora
 - https://github.com/ngoquanghuy99/POS-Tagging-BiLSTM-CRF
-
+- https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
+- https://www.nltk.org/book/ch05.html
 # Zano 
