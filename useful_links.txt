@@ -7,4 +7,6 @@ Put links here.
 # Toti
 - https://www.nltk.org/howto/dependency.html
 
+- https://github.com/ngoquanghuy99/POS-Tagging-BiLSTM-CRF
+
 # Zano 
