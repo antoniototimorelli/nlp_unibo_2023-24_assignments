@@ -16,5 +16,5 @@ Put links here.
 - https://stackoverflow.com/questions/62546815/how-to-use-word-embeddings-i-e-word2vec-glove-or-bert-to-calculate-the-most
 - https://radimrehurek.com/gensim/downloader.html
 - https://medium.com/analytics-vidhya/handling-out-of-vocabulary-words-in-natural-language-processing-based-on-context-4bbba16214d5
-
+- https://www.kaggle.com/code/tanyadayanand/pos-tagging-using-rnn
 # Zano 
