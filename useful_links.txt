@@ -17,4 +17,8 @@ Put links here.
 - https://radimrehurek.com/gensim/downloader.html
 - https://medium.com/analytics-vidhya/handling-out-of-vocabulary-words-in-natural-language-processing-based-on-context-4bbba16214d5
 - https://www.kaggle.com/code/tanyadayanand/pos-tagging-using-rnn
+
+IMPORTANTE:
+
+- https://stackoverflow.com/questions/45113130/how-to-add-new-embeddings-for-unknown-words-in-tensorflow-training-pre-set-fo?rq=1
 # Zano 
