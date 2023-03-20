@@ -1,0 +1,49 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.9",
+    "heartbeatAt": "2023-03-20T16:57:34.894111",
+    "startedAt": "2023-03-20T16:57:34.694060",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/antoniototimorelli/nlp_unibo_2022-23.git",
+        "commit": "e1de07bd7552d967b80fa1fb15061ebd98ca29ba"
+    },
+    "email": "rullofederico16@gmail.com",
+    "root": "D:/nlp_unibo_2022-23",
+    "host": "MSI",
+    "username": "rullo",
+    "executable": "d:\\envs\\tf\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2592.0,
+        "min": 0.0,
+        "max": 2592.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2592.0,
+            "min": 0.0,
+            "max": 2592.0
+        }
+    ],
+    "disk": {
+        "total": 931.4960899353027,
+        "used": 522.7244110107422
+    },
+    "gpu": "NVIDIA GeForce RTX 2060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2060",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.84393310546875
+    }
+}
