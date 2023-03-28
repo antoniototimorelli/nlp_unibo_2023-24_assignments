@@ -1,0 +1,205 @@
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████| 1072/1072 [00:07<00:00, 136.86ba/s]
+100%|████████████████████████████████████████████████████████████████████████| 268/268 [00:01<00:00, 136.76ba/s]
+100%|██████████████████████████████████████████████████████████████████████████| 99/99 [00:00<00:00, 144.40ba/s]
+DatasetDict({
+    train: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 8576
+    })
+    validation: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 2144
+    })
+    test: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 792
+    })
+})
+loading configuration file https://huggingface.co/distilroberta-base/resolve/main/config.json from cache at C:\Users\Antonio/.cache\huggingface\transformers\42d6b7c87cbac84fcdf35aa69504a5ccfca878fcee2a1a9b9ff7a3d1297f9094.aa95727ac70adfa1aaf5c88bea30a4f5e50869c68e68bce96ef1ec41b5facf46
+Model config RobertaConfig {
+  "_name_or_path": "distilroberta-base",
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "classifier_dropout": null,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.20.1",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+loading weights file https://huggingface.co/distilroberta-base/resolve/main/pytorch_model.bin from cache at C:\Users\Antonio/.cache\huggingface\transformers\7a0115a4c463f49bc7ab011872fc4a4b81be681a0434075955d29ac3388e225b.a6127d76576e81475313180aceb31a8688f7a649b80e380d26b5d30302dc83c1
+Some weights of the model checkpoint at distilroberta-base were not used when initializing RobertaModel: ['lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.dense.bias', 'lm_head.dense.weight', 'lm_head.bias', 'lm_head.decoder.weight']
+- This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+All the weights of RobertaModel were initialized from the model checkpoint at distilroberta-base.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use RobertaModel for predictions without further training.
+loading configuration file https://huggingface.co/distilroberta-base/resolve/main/config.json from cache at C:\Users\Antonio/.cache\huggingface\transformers\42d6b7c87cbac84fcdf35aa69504a5ccfca878fcee2a1a9b9ff7a3d1297f9094.aa95727ac70adfa1aaf5c88bea30a4f5e50869c68e68bce96ef1ec41b5facf46
+Model config RobertaConfig {
+  "_name_or_path": "distilroberta-base",
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "classifier_dropout": null,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 6,
+  "pad_token_id": 1,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.20.1",
+  "type_vocab_size": 1,
+  "use_cache": true,
+  "vocab_size": 50265
+}
+Initializing distilroberta-base as a decoder model. Cross attention layers are added to distilroberta-base and randomly initialized if distilroberta-base's architecture allows for cross attention layers.
+loading weights file https://huggingface.co/distilroberta-base/resolve/main/pytorch_model.bin from cache at C:\Users\Antonio/.cache\huggingface\transformers\7a0115a4c463f49bc7ab011872fc4a4b81be681a0434075955d29ac3388e225b.a6127d76576e81475313180aceb31a8688f7a649b80e380d26b5d30302dc83c1
+All model checkpoint weights were used when initializing RobertaForCausalLM.
+Some weights of RobertaForCausalLM were not initialized from the model checkpoint at distilroberta-base and are newly initialized: ['roberta.encoder.layer.2.crossattention.self.value.weight', 'roberta.encoder.layer.1.crossattention.output.dense.bias', 'roberta.encoder.layer.1.crossattention.output.dense.weight', 'roberta.encoder.layer.2.crossattention.self.value.bias', 'roberta.encoder.layer.4.crossattention.self.query.bias', 'roberta.encoder.layer.0.crossattention.self.value.weight', 'roberta.encoder.layer.0.crossattention.self.key.weight', 'roberta.encoder.layer.1.crossattention.self.value.weight', 'roberta.encoder.layer.5.crossattention.output.dense.bias', 'roberta.encoder.layer.5.crossattention.self.value.bias', 'roberta.encoder.layer.4.crossattention.output.LayerNorm.bias', 'roberta.encoder.layer.4.crossattention.self.query.weight', 'roberta.encoder.layer.0.crossattention.output.LayerNorm.bias', 'roberta.encoder.layer.1.crossattention.self.value.bias', 'roberta.encoder.layer.0.crossattention.self.key.bias', 'roberta.encoder.layer.2.crossattention.output.LayerNorm.weight', 'roberta.encoder.layer.1.crossattention.self.key.bias', 'roberta.encoder.layer.3.crossattention.self.query.bias', 'roberta.encoder.layer.0.crossattention.self.value.bias', 'roberta.encoder.layer.1.crossattention.output.LayerNorm.bias', 'roberta.encoder.layer.5.crossattention.output.LayerNorm.bias', 'roberta.encoder.layer.3.crossattention.self.key.weight', 'roberta.encoder.layer.2.crossattention.self.key.bias', 'roberta.encoder.layer.0.crossattention.output.dense.bias', 'roberta.encoder.layer.5.crossattention.self.key.weight', 'roberta.encoder.layer.1.crossattention.output.LayerNorm.weight', 'roberta.encoder.layer.3.crossattention.output.dense.bias', 'roberta.encoder.layer.4.crossattention.output.dense.bias', 'roberta.encoder.layer.4.crossattention.output.dense.weight', 'roberta.encoder.layer.3.crossattention.output.dense.weight', 'roberta.encoder.layer.0.crossattention.self.query.bias', 'roberta.encoder.layer.1.crossattention.self.key.weight', 'roberta.encoder.layer.5.crossattention.output.LayerNorm.weight', 'roberta.encoder.layer.1.crossattention.self.query.weight', 'roberta.encoder.layer.4.crossattention.output.LayerNorm.weight', 'roberta.encoder.layer.3.crossattention.output.LayerNorm.weight', 'roberta.encoder.layer.2.crossattention.self.query.weight', 'roberta.encoder.layer.0.crossattention.output.dense.weight', 'roberta.encoder.layer.5.crossattention.self.key.bias', 'roberta.encoder.layer.5.crossattention.self.value.weight', 'roberta.encoder.layer.3.crossattention.self.value.weight', 'roberta.encoder.layer.3.crossattention.output.LayerNorm.bias', 'roberta.encoder.layer.3.crossattention.self.key.bias', 'roberta.encoder.layer.4.crossattention.self.value.bias', 'roberta.encoder.layer.0.crossattention.self.query.weight', 'roberta.encoder.layer.2.crossattention.self.query.bias', 'roberta.encoder.layer.2.crossattention.output.dense.bias', 'roberta.encoder.layer.4.crossattention.self.key.weight', 'roberta.encoder.layer.2.crossattention.output.LayerNorm.bias', 'roberta.encoder.layer.4.crossattention.self.value.weight', 'roberta.encoder.layer.2.crossattention.output.dense.weight', 'roberta.encoder.layer.5.crossattention.self.query.weight', 'roberta.encoder.layer.3.crossattention.self.value.bias', 'roberta.encoder.layer.3.crossattention.self.query.weight', 'roberta.encoder.layer.5.crossattention.self.query.bias', 'roberta.encoder.layer.0.crossattention.output.LayerNorm.weight', 'roberta.encoder.layer.2.crossattention.self.key.weight', 'roberta.encoder.layer.5.crossattention.output.dense.weight', 'roberta.encoder.layer.4.crossattention.self.key.bias', 'roberta.encoder.layer.1.crossattention.self.query.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Set `config.is_decoder=True` and `config.add_cross_attention=True` for decoder_config
+Parameters #: 178472025
+PyTorch: setting up devices
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+Using the `WAND_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+PyTorch: setting up devices
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████| 1072/1072 [00:09<00:00, 118.93ba/s]
+ 72%|████████████████████████████████████████████████████                    | 194/268 [00:01<00:00, 114.73ba/s]
+DatasetDict({
+    train: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 8576
+    })
+    validation: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 2144
+    })
+    test: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 792
+    })
+100%|████████████████████████████████████████████████████████████████████████| 268/268 [00:02<00:00, 115.79ba/s]
+100%|██████████████████████████████████████████████████████████████████████████| 99/99 [00:00<00:00, 125.00ba/s]
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████| 1072/1072 [00:09<00:00, 114.85ba/s]
+100%|████████████████████████████████████████████████████████████████████████| 268/268 [00:02<00:00, 113.85ba/s]
+ 56%|█████████████████████████████████████████                                 | 55/99 [00:00<00:00, 116.25ba/s]
+DatasetDict({
+    train: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 8576
+    })
+    validation: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 2144
+    })
+    test: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 792
+    })
+
+100%|██████████████████████████████████████████████████████████████████████████| 99/99 [00:00<00:00, 114.74ba/s]
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████| 1072/1072 [00:09<00:00, 109.91ba/s]
+100%|████████████████████████████████████████████████████████████████████████| 268/268 [00:02<00:00, 107.94ba/s]
+100%|██████████████████████████████████████████████████████████████████████████| 99/99 [00:00<00:00, 108.79ba/s]
+DatasetDict({
+    train: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 8576
+    })
+    validation: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 2144
+    })
+    test: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 792
+    })
+})
+
+
+
+100%|██████████████████████████████████████████████████████████████████████| 1072/1072 [00:08<00:00, 127.42ba/s]
+100%|████████████████████████████████████████████████████████████████████████| 268/268 [00:02<00:00, 125.73ba/s]
+ 14%|██████████▍                                                               | 14/99 [00:00<00:00, 138.61ba/s]
+DatasetDict({
+    train: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 8576
+    })
+    validation: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 2144
+    })
+    test: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 792
+    })
+
+100%|██████████████████████████████████████████████████████████████████████████| 99/99 [00:00<00:00, 126.99ba/s]
+
+
+
+100%|██████████████████████████████████████████████████████████████████████| 1072/1072 [00:09<00:00, 115.27ba/s]
+
+100%|████████████████████████████████████████████████████████████████████████| 268/268 [00:02<00:00, 115.87ba/s]
+DatasetDict({
+    train: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 8576
+    })
+    validation: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 2144
+    })
+    test: Dataset({
+        features: ['input_ids', 'attention_mask', 'labels'],
+        num_rows: 792
+    })
+})
+100%|██████████████████████████████████████████████████████████████████████████| 99/99 [00:00<00:00, 117.93ba/s]
+PyTorch: setting up devices
+PyTorch: setting up devices
+PyTorch: setting up devices
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+Using the `WAND_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+PyTorch: setting up devices
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
