@@ -1,6 +1,0 @@
-name: NLP
-channels:
-  - conda-forge
-  - pytorch
-  - defaults
-prefix: C:\Users\Antonio\miniconda3\envs\NLP
