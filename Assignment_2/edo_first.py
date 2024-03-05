@@ -20,7 +20,7 @@ import os
 import transformers
 from transformers import AutoTokenizer, TFAutoModel,TFBertForSequenceClassification, TFAutoModelForSequenceClassification,TFBertMainLayer,TFBertPreTrainedModel, PreTrainedTokenizerFast
 warnings.filterwarnings("ignore")
-from tensorflow.keras import layers, models
+from keras import layers, models
 from sklearn.metrics import f1_score, accuracy_score, classification_report, multilabel_confusion_matrix, ConfusionMatrixDisplay, PrecisionRecallDisplay
 import random
 import os
@@ -307,7 +307,7 @@ train_dataframe = refine_df(train_df)
 test_dataframe = refine_df(test_df)
 valid_dataframe = refine_df(valid_df)
 
-display(train_dataframe.head())
+print(train_dataframe.head())
 
 train_df["Premise"].describe()
 
