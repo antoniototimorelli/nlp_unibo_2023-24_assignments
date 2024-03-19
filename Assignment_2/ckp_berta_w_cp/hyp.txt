@@ -1,0 +1,1 @@
+run_num: 121  epochs: 10, batch_size: 64, dropout: 0.2,lr : 0.001,
