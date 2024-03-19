@@ -1,0 +1,95 @@
+{'model': MultilabelClassifier(
+  (bert_conclusion): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 128, padding_idx=0)
+        (position_embeddings): Embedding(512, 128)
+        (token_type_embeddings): Embedding(2, 128)
+        (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0-1): 2 x BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=128, out_features=128, bias=True)
+                (key): Linear(in_features=128, out_features=128, bias=True)
+                (value): Linear(in_features=128, out_features=128, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=128, out_features=128, bias=True)
+                (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=128, out_features=512, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=512, out_features=128, bias=True)
+              (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=128, out_features=128, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=128, out_features=4, bias=True)
+  )
+  (bert_premise): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 128, padding_idx=0)
+        (position_embeddings): Embedding(512, 128)
+        (token_type_embeddings): Embedding(2, 128)
+        (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0-1): 2 x BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=128, out_features=128, bias=True)
+                (key): Linear(in_features=128, out_features=128, bias=True)
+                (value): Linear(in_features=128, out_features=128, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=128, out_features=128, bias=True)
+                (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=128, out_features=512, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=512, out_features=128, bias=True)
+              (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=128, out_features=128, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=128, out_features=4, bias=True)
+  )
+  (dropout): Dropout(p=0.0, inplace=False)
+  (dense): Linear(in_features=128, out_features=4, bias=True)
+  (sigmoid): Sigmoid()
+), 'train_losses': [1.2082767542670756, 1.1852987457724178, 1.1801867330775542, 1.1736539812648998, 1.1729027116999906, 1.17292797425214, 1.1712368979173549, 1.1698397524216595, 1.1696589890648337, 1.1672132337794585], 'val_losses': [1.198251970609029, 1.2030691027641296, 1.2070584456125895, 1.2048999230066935, 1.2073970874150595, 1.2017704208691915, 1.2061177492141724, 1.1999725580215455, 1.2020317316055298, 1.2022001107533773], 'f1_scores': [0.46996552460161406, 0.6085503955443106, 0.6228640206793569, 0.6398960609013691, 0.6333783758054973, 0.6451850978915002, 0.647304538133421, 0.6459418077838921, 0.6422753130130955, 0.6424344377802119], 'val_f1_scores': [0.48794118105067885, 0.4597597292119869, 0.5306636258571525, 0.4606581369218068, 0.48814537573058897, 0.4640570384941091, 0.49972348341543005, 0.47574177003488044, 0.4726153436097423, 0.47250849112430326]}

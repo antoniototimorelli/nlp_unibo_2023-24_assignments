@@ -1,0 +1,50 @@
+{'model': MultilabelClassifier(
+  (bert_conclusion): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 128, padding_idx=0)
+        (position_embeddings): Embedding(512, 128)
+        (token_type_embeddings): Embedding(2, 128)
+        (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0-1): 2 x BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=128, out_features=128, bias=True)
+                (key): Linear(in_features=128, out_features=128, bias=True)
+                (value): Linear(in_features=128, out_features=128, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=128, out_features=128, bias=True)
+                (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=128, out_features=512, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=512, out_features=128, bias=True)
+              (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=128, out_features=128, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=128, out_features=4, bias=True)
+  )
+  (dropout): Dropout(p=0.1, inplace=False)
+  (dense): Linear(in_features=128, out_features=4, bias=True)
+  (sigmoid): Sigmoid()
+), 'train_losses': [1.2117218690759994, 1.194030993125018, 1.1815025315565222, 1.1767302064334646, 1.1743602121577543, 1.1737176586599911, 1.1709284600089578, 1.170619358735926, 1.1681512187508976, 1.1668012184255263], 'val_losses': [1.2043258825937906, 1.2332546353340148, 1.2143257896105448, 1.2181472738583883, 1.2078768730163574, 1.2310224334398905, 1.2718323945999146, 1.265125819047292, 1.2605597575505574, 1.2596389651298523], 'f1_scores': [0.46359012204557276, 0.565819348111628, 0.6009904350335651, 0.6239660552374782, 0.6243542199888285, 0.6319579361430965, 0.639367993891501, 0.6396444168917333, 0.6389740838058251, 0.6435377968625398], 'val_f1_scores': [0.47682443289090254, 0.5476875596425579, 0.5281637631341156, 0.46976733111412744, 0.448793158649888, 0.5112768748063768, 0.5640941209364919, 0.5761481904975285, 0.5607898645477765, 0.5587987340717591]}
