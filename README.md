@@ -1,4 +1,4 @@
-# NLP Assignment
+# NLP Assignments
 
 This repository contains two university assignments focused on Natural Language Processing (NLP) tasks. Both assignments involve different models and methodologies for tackling specific NLP problems. 
 The assignments are designed to provide insights into the capabilities of NLP models in solving various tasks.
