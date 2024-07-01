@@ -38,7 +38,7 @@ Make a pull request.
 
 ## Authors
 
-- Fabio Zanotti
-- Antonio Morelli
-- Edoardo Conca
-- Federico Rullo
+- Fabio Zanotti    (fabio.zanotti@studio.unibo.it)
+- Antonio Morelli  (antonio.morelli@studio.unibo.it)
+- Edoardo Conca    (edoardo.conca@studio.unibo.it)
+- Federico Rullo   (federico.rullo@studio.unibo.it)
