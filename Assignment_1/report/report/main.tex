@@ -142,7 +142,7 @@ Additional Dense                  &  \textbf{0.7851}                   \\ \hline
 \section{Discussion}
 \label{sec:discussion}
 \subsection{Quantitative Results}
-Upon analyzing the results, it is evident that while the performances of the two deeper models are comparable, the one with two Dense layers exhibits slightly superior performance on average. However, adhering to the outlined request for error analysis on the best single model, we focused on one of the LSTM models, which achieved a macro F1-score of 0.7939. This observation suggests that LSTM layers effectively captured sequential dependencies and long-range relationships within the input data, crucial for POS tagging tasks.
+Upon analyzing the results, it is evident that while the performances of the two deeper models are comparable, the one with two Dense layers exhibits slightly superior performance on average. However, adhering to the outlined request for error analysis on the best single model based on the validation set performance, we focused on one of the LSTM models, which achieved a macro F1-score of 0.8054. This observation suggests that LSTM layers effectively captured sequential dependencies and long-range relationships within the input data, crucial for POS tagging tasks.
 
 \subsection{Error analysis}
 We observed a higher error rate on the validation set compared to the test set, possibly due to more challenging or edge case samples in the validation set. Four classes—NN, NNP, JJ, and NNS—were consistently among the top mismatches for each model, with their higher presence in the validation set explaining the increased error rate.
