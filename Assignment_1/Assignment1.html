@@ -11681,12 +11681,18 @@ AVERAGE METRICS
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">bl_f1</span> <span class="o">=</span> <span class="n">avg_metrics_bl_val</span><span class="p">[</span><span class="s1">'best_macro_f1'</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#best macro_f1</span>
+<span class="n">bl_f1</span> <span class="o">=</span> <span class="n">avg_metrics_bl_val</span><span class="p">[</span><span class="s1">'best_macro_f1'</span><span class="p">]</span>
 <span class="n">add_lstm_f1</span> <span class="o">=</span> <span class="n">avg_metrics_add_lstm_val</span><span class="p">[</span><span class="s1">'best_macro_f1'</span><span class="p">]</span>
 <span class="n">add_fc_f1</span> <span class="o">=</span> <span class="n">avg_metrics_add_fc_val</span><span class="p">[</span><span class="s1">'best_macro_f1'</span><span class="p">]</span>
+
+<span class="c1">#best seed</span>
+<span class="n">bl_seed</span> <span class="o">=</span> <span class="n">avg_metrics_bl_val</span><span class="p">[</span><span class="s1">'best_seed'</span><span class="p">]</span>
+<span class="n">add_lstm_seed</span> <span class="o">=</span> <span class="n">avg_metrics_add_lstm_val</span><span class="p">[</span><span class="s1">'best_seed'</span><span class="p">]</span>
+<span class="n">add_fc_seed</span> <span class="o">=</span> <span class="n">avg_metrics_add_fc_val</span><span class="p">[</span><span class="s1">'best_seed'</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -11697,12 +11703,12 @@ AVERAGE METRICS
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'The best macro f1_score obtained on the Validation set with baseline model is </span><span class="si">{</span><span class="n">bl_f1</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'The best macro f1_score obtained on the Validation set with double lstm layer model is </span><span class="si">{</span><span class="n">add_lstm_f1</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'The best macro f1_score obtained on the Validation set with double dense layer model is </span><span class="si">{</span><span class="n">add_fc_f1</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'The best macro f1_score obtained on the Validation set with baseline model is </span><span class="si">{</span><span class="n">bl_f1</span><span class="si">}</span><span class="s1"> - seed: </span><span class="si">{</span><span class="n">bl_seed</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'The best macro f1_score obtained on the Validation set with double lstm layer model is </span><span class="si">{</span><span class="n">add_lstm_f1</span><span class="si">}</span><span class="s1"> - seed </span><span class="si">{</span><span class="n">add_lstm_seed</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'The best macro f1_score obtained on the Validation set with double dense layer model is </span><span class="si">{</span><span class="n">add_fc_f1</span><span class="si">}</span><span class="s1"> - seed: </span><span class="si">{</span><span class="n">add_fc_seed</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -11715,9 +11721,9 @@ AVERAGE METRICS
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>The best macro f1_score obtained on the Validation set with baseline model is 0.7920461657011612
-The best macro f1_score obtained on the Validation set with double lstm layer model is 0.8054984029489812
-The best macro f1_score obtained on the Validation set with double dense layer model is 0.8027764963181309
+<pre>The best macro f1_score obtained on the Validation set with baseline model is 0.7920461657011612 - seed: 29
+The best macro f1_score obtained on the Validation set with double lstm layer model is 0.8054984029489812 - seed 16
+The best macro f1_score obtained on the Validation set with double dense layer model is 0.8027764963181309 - seed: 192
 </pre>
 </div>
 </div>
@@ -11730,7 +11736,7 @@ The best macro f1_score obtained on the Validation set with double dense layer m
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Based on the observed performance on the validation set, the best model was identified as the one with two LSTM layers, despite the similar performances of the two deeper models. This model demonstrated the highest <code>f1_score</code> on the validation set.</p>
+<p>Based on the observed performance on the validation set, the model with two LSTM layers, run with seed 16, was identified as the best single model despite the similar performances of the two deeper models. This model demonstrated the highest <code>f1_score</code> on the validation set.</p>
 <p>This finding suggests that the LSTM layers effectively captured sequential dependencies and long-range relationships within the input data, which are particularly crucial for POS tagging tasks.</p>
 <h3 id="6.1-Compare-the-errors-made-on-the-validation-and-test-sets">6.1 Compare the errors made on the validation and test sets<a class="anchor-link" href="#6.1-Compare-the-errors-made-on-the-validation-and-test-sets">¶</a></h3>
 </div>
